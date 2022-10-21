@@ -1,6 +1,9 @@
 djangorestframework
 
 # Development
+pytest
+pytest-django
+pytest-factoryboy
 django-extensions
 IPython
 Werkzeug
