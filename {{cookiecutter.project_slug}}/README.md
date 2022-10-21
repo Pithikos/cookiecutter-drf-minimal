@@ -10,4 +10,14 @@ Setup
 
 Start application
 
-    
+    python manage.py runserver_plus --nopin
+
+You can now visit http://127.0.0.1:8000
+
+
+Testing
+=======
+
+Run all tests
+
+    pytest
