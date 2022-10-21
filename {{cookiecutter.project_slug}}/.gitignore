@@ -1,4 +1,9 @@
+# Don't commit hidden files
 .*
 
+# Python specific
 *.pyc
 __pycache__
+
+# Data
+*.sqlite3
