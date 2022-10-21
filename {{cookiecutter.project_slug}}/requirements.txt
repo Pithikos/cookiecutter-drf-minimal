@@ -1,0 +1,6 @@
+djangorestframework
+
+# Development
+django-extensions
+IPython
+Werkzeug

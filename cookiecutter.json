@@ -1,0 +1,8 @@
+{
+    "full_name": "Manos",
+    "email": "manossef@google.com",
+    "github_username": "Pithikos",
+    "project_name": "MyCoolProject",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "python": "python3.9"
+}
