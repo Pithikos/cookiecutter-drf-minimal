@@ -10,6 +10,7 @@ Setup
 
 Start application
 
+    export DJANGO_SETTINGS_MODULE=mycoolproject.settings.dev
     python manage.py runserver_plus --nopin
 
 You can now visit http://127.0.0.1:8000
