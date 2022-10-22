@@ -1,4 +1,4 @@
-djangorestframework
+djangorestframework>=3,<4  # Latest version 3
 
 # Development
 pytest
