@@ -35,7 +35,6 @@ AUTH_USER_MODEL = 'custom_auth.User'
 # Application definition
 
 INSTALLED_APPS = [
-    # Django contrib
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -47,6 +46,7 @@ INSTALLED_APPS = [
     "mycoolproject.auth.apps.AuthConfig",
     
     # 3rd party
+    "rest_framework",
     "django_extensions",
 ]
 
