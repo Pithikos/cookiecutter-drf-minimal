@@ -14,8 +14,8 @@ from pathlib import Path
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-TESTS_DIR = BASE_DIR / "tests"
 PROJECT_DIR = BASE_DIR.parent
+TESTS_DIR = PROJECT_DIR / "tests"
 
 
 # Quick-start development settings - unsuitable for production
@@ -79,17 +79,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "mycoolproject.wsgi.application"
-
-
-# Database
-# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
-}
 
 
 # Password validation
