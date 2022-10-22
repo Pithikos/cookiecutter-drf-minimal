@@ -24,9 +24,6 @@ TESTS_DIR = PROJECT_DIR / "tests"
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "django-insecure-6&dy$haqptyf$o-2e1_r6p$(j_)vd3+v19xa%tge_u&p#4gf+1"
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
 ALLOWED_HOSTS = []
 
 AUTH_USER_MODEL = 'custom_auth.User'
