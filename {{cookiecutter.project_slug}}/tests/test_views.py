@@ -3,8 +3,8 @@ class TestUsers:
         other_user = user_factory()
         client.force_login(user)
 
-        resp = client.get(f"/users/{user.id}/")
+        resp = client.get(f"/api/users/{user.id}/")
         assert resp.status_code == 200
 
-        resp = client.get(f"/users/{other_user.id}/")
+        resp = client.get(f"/api/users/{other_user.id}/")
         assert resp.status_code in (400, 401)
