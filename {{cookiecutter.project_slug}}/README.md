@@ -1,5 +1,8 @@
+{{cookiecutter.project_name}}
+=============================
+
 Development
-===========
+-----------
 
 Setup
 
@@ -9,20 +12,21 @@ Setup
 
 Migrate
 
+    export DJANGO_SETTINGS_MODULE={{cookiecutter.project_slug}}.settings.dev
     python manage.py makemigrations
     python manage.py migrate
 
 
 Start application
 
-    export DJANGO_SETTINGS_MODULE=mycoolproject.settings.dev
+    export DJANGO_SETTINGS_MODULE={{cookiecutter.project_slug}}.settings.dev
     python manage.py runserver_plus --nopin
 
 You can now visit http://localhost:8000/api/
 
 
 Testing
-=======
+-------
 
 Run all tests
 
