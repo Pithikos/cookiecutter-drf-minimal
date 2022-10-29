@@ -1,5 +1,5 @@
 djangorestframework>=3,<4  # Latest v3
-rest_framework_roles>1.0
+rest_framework_roles>=1.0.2
 
 # Development
 pytest
