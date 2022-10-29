@@ -1,9 +1,9 @@
 # Don't commit hidden files
 .*
 
-# Python specific
+# Python garbage
 *.pyc
 __pycache__
 
-# Data
+# Local garbage
 *.sqlite3

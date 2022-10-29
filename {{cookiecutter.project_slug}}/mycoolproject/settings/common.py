@@ -29,6 +29,13 @@ ALLOWED_HOSTS = []
 AUTH_USER_MODEL = 'custom_auth.User'
 
 
+# REST Framework
+
+REST_FRAMEWORK_ROLES = {
+    "ROLES": "mycoolproject.auth.roles.ROLES",
+}
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -44,6 +51,7 @@ INSTALLED_APPS = [
     
     # 3rd party
     "rest_framework",
+    "rest_framework_roles",
     "django_extensions",
 ]
 
