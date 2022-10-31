@@ -1,5 +1,5 @@
 from .common import *  # noqa
-from .dev import DATABASES
+from .development import DATABASES
 
 
 DATABASES["default"]["TEST"] = {
