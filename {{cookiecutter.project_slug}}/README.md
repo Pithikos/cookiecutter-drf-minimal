@@ -6,8 +6,8 @@ Development
 
 Setup
 
-    virtualenv .env -p {{cookiecutter.python}}
-    source .env/bin/activate && pip install -r requirements.txt
+    virtualenv .venv -p {{cookiecutter.python}}
+    source .venv/bin/activate && pip install -r requirements.txt
 
 
 Migrate
