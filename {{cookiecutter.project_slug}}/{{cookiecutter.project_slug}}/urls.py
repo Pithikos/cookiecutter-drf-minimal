@@ -3,7 +3,7 @@ from django.urls import path, include
 
 from rest_framework import routers
 
-from mycoolproject.auth.views import UserViewSet
+from {{cookiecutter.project_slug}}.auth.views import UserViewSet
 
 
 users_router = routers.DefaultRouter()
