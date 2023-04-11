@@ -13,6 +13,7 @@ class UserViewSet(ModelViewSet):
         'destroy,retrieve,me': {'user': is_self, 'admin': True},
         'create': {'anon': True},
         'list': {'admin': True},
+        'me': {'user': True},
     }
 
     @action(detail=False, methods=['GET'])
