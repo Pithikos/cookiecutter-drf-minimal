@@ -1,5 +1,5 @@
-from {{cookiecutter.project_slug}}.auth.models import User
-from {{cookiecutter.project_slug}}.auth.serializers import UserSerializer
+from {{cookiecutter.project_slug}}.authn.models import User
+from {{cookiecutter.project_slug}}.authn.serializers import UserSerializer
 
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.decorators import action

@@ -26,13 +26,13 @@ SECRET_KEY = "django-insecure-6&dy$haqptyf$o-2e1_r6p$(j_)vd3+v19xa%tge_u&p#4gf+1
 
 ALLOWED_HOSTS = []
 
-AUTH_USER_MODEL = 'custom_auth.User'
+AUTH_USER_MODEL = 'authn.User'
 
 
 # REST Framework
 
 REST_FRAMEWORK_ROLES = {
-    "ROLES": "{{cookiecutter.project_slug}}.auth.roles.ROLES",
+    "ROLES": "{{cookiecutter.project_slug}}.authn.roles.ROLES",
 }
 
 
@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 
     # Own
-    "{{cookiecutter.project_slug}}.auth.apps.AuthConfig",
+    "{{cookiecutter.project_slug}}.authn.apps.AuthConfig",
     
     # 3rd party
     "rest_framework",

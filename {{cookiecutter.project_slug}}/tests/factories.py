@@ -10,4 +10,4 @@ class UserFactory(factory.django.DjangoModelFactory):
     username = factory.LazyAttribute(lambda x: faker.user_name())
     email = factory.LazyAttribute(lambda x: faker.email())
     class Meta:
-        model = 'custom_auth.User'
+        model = 'authn.User'
