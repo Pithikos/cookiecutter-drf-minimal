@@ -10,9 +10,10 @@ class UserViewSet(ModelViewSet):
     serializer_class = UserSerializer
     queryset = User.objects.all()
     view_permissions = {
-        'destroy,retrieve,me': {'user': is_self, 'admin': True},
+        'destroy,retrieve': {'user': is_self, 'admin': True},
         'create': {'anon': True},
         'list': {'admin': True},
+        'me': {'user': True},
     }
 
     @action(detail=False, methods=['GET'])
